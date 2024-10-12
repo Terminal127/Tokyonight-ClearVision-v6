@@ -38,7 +38,119 @@
   /* APP BACKGROUND */
   --background-shading: 100%; /* app background shading */
   --background-overlay: rgba(26, 27, 38, 0.8); /* app background overlay color/gradient */
-  --background-image: url("<----insert the url here----->");  /* app background image (link must be HTTPS) */
+  --background-image: url("/**
+ * @name ClearVision-Tokyonight
+ * @author ClearVision Team
+ * @modified by Anubhav Mazumder(Terminal127)
+ * @version 1.0.0
+ * @description Highly customizable theme for BetterDiscord now available in tokyonight colorscheme
+ * @source https://github.com/ClearVision/ClearVision-v6
+ * @website https://clearvision.github.io
+ */
+
+/* IMPORT CSS */
+@import url(https://clearvision.github.io/ClearVision-v6/main.css);
+
+/* SETTINGS */
+:root {
+  /* ACCENT COLORS */
+  --main-color: #7aa2f7; /* main accent color */
+  --hover-color: #bb9af7; /* hover accent color */
+  --success-color: #9ece6a; /* success accent color */
+  --danger-color: #f7768e; /* danger accent color */
+  --url-color: var(--main-color); /* The color of url links */
+
+  /* STATUS COLORS */
+  --online-color: #9ece6a; /* online status color */
+  --idle-color: #e0af68; /* idle status color */
+  --dnd-color: #f7768e; /* dnd status color */
+  --streaming-color: #bb9af7; /* streaming status color */
+  --offline-color: #565f89; /* offline/invisible status color */
+
+  /* GENERAL */
+  --main-font: gg sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+  --code-font: 'Fira Code', monospace; /* font for codeblocks */
+  --text-normal: #a9b1d6; /* color of default discord text */
+  --text-muted: #565f89; /* color of default discord muted text */
+  --channels-width: 200px; /* channel list width */
+  --members-width: 240px; /* member list width */
+
+  /* APP BACKGROUND */
+  --background-shading: 100%; /* app background shading */
+  --background-overlay: rgba(26, 27, 38, 0.8); /* app background overlay color/gradient */
+  --background-image: url(https://images7.alphacoders.com/135/thumb-1920-1358151.png);  /* app background image (link must be HTTPS) */
+  --background-position: center; /* app background position */
+  --background-size: cover; /* app background size */
+  --background-repeat: no-repeat; /* app background repeat */
+  --background-attachment: fixed; /* app background attachment */
+  --background-brightness: 90%; /* app background brightness */
+  --background-contrast: 110%; /* app background contrast */
+  --background-saturation: 180%; /* app background saturation */
+  --background-invert: 0%; /* app background invert */
+  --background-grayscale: 0%; /* app background grayscale */
+  --background-sepia: 0%; /* app background sepia */
+  --background-blur: 2px; /* app background blur */
+
+  /* HOME BUTTON ICON */
+  --home-icon: url(https://clearvision.github.io/icons/discord.svg); /* home button icon (link must be HTTPS) */
+  --home-position: center; /* home button icon position */
+  --home-size: 40px; /* home button icon size */
+
+  /* CHANNEL COLORS */
+  --channel-unread: var(--main-color); /* Unread Server channel color */
+  --channel-color: rgba(169, 177, 214, 0.3); /* Read Server channel color */
+  --channel-text-selected: #fff; /* Selected channel text color */
+  --muted-color: rgba(86, 95, 137, 0.6); /* Muted channel color */
+
+  /* MODAL BACKDROP */
+  --backdrop-overlay: rgba(26, 27, 38, 0.8); /* modal backdrop overlay color/gradient */
+  --backdrop-image: var(--background-image); /* modal backdrop image */
+  --backdrop-position: var(--background-position); /* modal backdrop position */
+  --backdrop-size: var(--background-size); /* modal backdrop size */
+  --backdrop-repeat: var(--background-repeat); /* modal backdrop repeat */
+  --backdrop-attachment: var(--background-attachment); /* modal backdrop attachment */
+  --backdrop-brightness: var(--background-brightness); /* modal backdrop brightness */
+  --backdrop-contrast: var(--background-contrast); /* modal backdrop contrast */
+  --backdrop-saturation: var(--background-saturation); /* modal backdrop saturation */
+  --backdrop-invert: var(--background-invert); /* modal backdrop invert */
+  --backdrop-grayscale: var(--background-grayscale); /* modal backdrop grayscale */
+  --backdrop-sepia: var(--background-sepia); /* modal backdrop sepia */
+  --backdrop-blur: var(--background-blur); /* modal backdrop blur */
+
+  /* USER POPOUT BACKGROUND */
+  --user-popout-image: var(--background-image); /* app background image */
+  --user-popout-position: var(--background-position); /* user popout background position */
+  --user-popout-size: var(--background-size); /* user popout background size */
+  --user-popout-repeat: var(--background-repeat); /* user popout background repeat */
+  --user-popout-attachment: var(--background-attachment); /* user popout background attachment */
+  --user-popout-brightness: var(--background-brightness); /* user popout background brightness */
+  --user-popout-contrast: var(--background-contrast); /* user popout background contrast */
+  --user-popout-saturation: var(--background-saturation); /* user popout background saturation */
+  --user-popout-invert: var(--background-invert); /* user popout background invert */
+  --user-popout-grayscale: var(--background-grayscale); /* user popout background grayscale */
+  --user-popout-sepia: var(--background-sepia); /* user popout background sepia */
+  --user-popout-blur: calc(var(--background-blur) + 3px); /* user popout background blur */
+  --user-popout-overlay: rgba(26, 27, 38, 0.7); /* user popout overlay color */
+
+  /* USER MODAL BACKGROUND */
+  --user-modal-image: var(--background-image); /* app background image */
+  --user-modal-position: var(--background-position); /* user modal background position */
+  --user-modal-size: var(--background-size); /* user modal background size */
+  --user-modal-repeat: var(--background-repeat); /* user modal background repeat */
+  --user-modal-attachment: var(--background-attachment); /* user modal background attachment */
+  --user-modal-brightness: var(--background-brightness); /* user modal background brightness */
+  --user-modal-contrast: var(--background-contrast); /* user modal background contrast */
+  --user-modal-saturation: var(--background-saturation); /* user modal background saturation */
+  --user-modal-invert: var(--background-invert); /* user modal background invert */
+  --user-modal-grayscale: var(--background-grayscale); /* user modal background grayscale */
+  --user-modal-sepia: var(--background-sepia); /* user modal background sepia */
+  --user-modal-blur: calc(var(--background-blur) + 3px); /* user modal background blur */
+
+  /* THEME BD COLORS */
+  --bd-blue: var(--main-color); /* betterdiscord main color */
+  --bd-blue-hover: var(--hover-color); /* betterdiscord hover color */
+  --bd-blue-active: var(--hover-color); /* betterdiscord active color */
+}");  /* app background image (link must be HTTPS) */
   --background-position: center; /* app background position */
   --background-size: cover; /* app background size */
   --background-repeat: no-repeat; /* app background repeat */
